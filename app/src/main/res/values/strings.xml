@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bird Counter</string>
+    <string name="btn_black_bird">ORANGE BIRD</string>
+    <string name="btn_gray_bird">GRAY BIRD</string>
+    <string name="btn_red_bird">RED BIRD</string>
+    <string name="btn_blue_bird">BLUE BIRD</string>
+    <string name="tv_num_of_bird_seen">0</string>
+    <string name="btn_reset_counter">RESET COUNTER</string>
+</resources>

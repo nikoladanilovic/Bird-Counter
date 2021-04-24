@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_vertical_centre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".5"
+        android:orientation="vertical"/>
+
+    <Button
+        android:id="@+id/btnOrangeSeen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guide_vertical_centre"
+        android:text="@string/btn_black_bird"
+        />
+
+    <Button
+        android:id="@+id/btnGraySeen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_vertical_centre"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/btn_gray_bird"
+        />
+
+    <Button
+        android:id="@+id/btnRedSeen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOrangeSeen"
+        app:layout_constraintEnd_toEndOf="@id/guide_vertical_centre"
+        android:text="@string/btn_red_bird"
+        />
+
+    <Button
+        android:id="@+id/btnBlueSeen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guide_vertical_centre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGraySeen"
+        android:text="@string/btn_blue_bird"
+        />
+
+    <TextView
+        android:id="@+id/tvNumberOfBirdSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/tv_num_of_bird_seen"
+        />
+
+    <Button
+        android:id="@+id/btnResetCounter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/btn_reset_counter"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
